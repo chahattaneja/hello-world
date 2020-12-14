@@ -1,0 +1,7 @@
+<h2>TO-DO</h2>
+<form>
+<input type="text" #item (keyup.enter)="addItem(item)" class="form-control">
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of items.controls" (click)="deleteItem(item)"> {{item.value}} </li>
+</ul>
+</form>
